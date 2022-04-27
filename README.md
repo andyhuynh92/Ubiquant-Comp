@@ -16,4 +16,4 @@ After grabbing the stock data, I computed the correlation of the stock price wit
 
 4. `LGBM.ipynb`
 
-Here I did a simple model using LightGBM. I wanted to reverse engineer the features in order to feature engineer new ones, but this never happened due to the processing that Ubiquant did to the data.
+Here I did a simple model using LightGBM. I wanted to reverse engineer the features in order to feature engineer new ones, but this never happened due to the processing that Ubiquant did to the data. This made it extremely difficult to properly introduce new features into the data.
