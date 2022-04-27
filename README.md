@@ -11,7 +11,6 @@ Here, I was trying to find the distribution of the target column with the `time_
 Using the reverse engineered data, I grabbed the stock closing price using the Yahoo finance API.
 
 3. a. `Computing correlation with pandas.ipynb` 
-
 b. `Computing correlation with polars.ipynb`
 
 After grabbing the stock data, I computed the correlation of the stock price with each and every one of the features, both ignoring the `investment_id`, and also fixing the `investment_id`. I also used [Polars](https://www.pola.rs/) as well over Pandas. This was because when I first attempted to compute the correlation, it was going to take 2-3 days using an inefficient algorithm. This was when I learned about Polars and I decided to try it. It turns out that I had to rewrite the way I implemented splitting a dataframe to make the algorithm much much faster. 
